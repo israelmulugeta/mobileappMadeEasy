@@ -1,0 +1,6 @@
+{
+  "appId": "com.web2mobile.app",
+  "appName": "Web2Mobile App",
+  "webDir": "www",
+  "bundledWebRuntime": false
+}
