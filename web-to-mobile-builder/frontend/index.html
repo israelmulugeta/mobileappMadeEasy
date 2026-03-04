@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web-to-Mobile App Builder</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <div class="logo">⚡ Web2Mobile</div>
+        <nav>
+          <a href="#home">Home</a>
+          <a href="#features">Features</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="container">
+          <h1>Turn Your Web App into a Mobile App Instantly</h1>
+          <p>Build Android APK &amp; iOS IPA from your web code in minutes</p>
+
+          <form id="buildForm" class="build-form" enctype="multipart/form-data">
+            <label>
+              Web App ZIP (HTML/CSS/JS) *
+              <input type="file" name="appZip" accept=".zip" required />
+            </label>
+            <label>
+              App Name
+              <input type="text" name="appName" placeholder="My Amazing App" />
+            </label>
+            <label>
+              App Icon (PNG)
+              <input type="file" name="appIcon" accept="image/png" />
+            </label>
+            <label>
+              Splash Screen (PNG)
+              <input type="file" name="splashScreen" accept="image/png" />
+            </label>
+            <label>
+              Email Notification (optional)
+              <input type="email" name="email" placeholder="you@example.com" />
+            </label>
+
+            <fieldset>
+              <legend>Plugin Toggles</legend>
+              <label><input type="checkbox" name="camera" /> Camera</label>
+              <label><input type="checkbox" name="push" /> Push Notifications</label>
+              <label><input type="checkbox" name="analytics" /> Analytics</label>
+            </fieldset>
+
+            <fieldset>
+              <legend>Platforms</legend>
+              <label><input type="checkbox" name="platforms" value="android" checked /> Android</label>
+              <label><input type="checkbox" name="platforms" value="ios" checked /> iOS</label>
+            </fieldset>
+
+            <button type="submit">Build Now</button>
+            <div id="formMessage" class="message" aria-live="polite"></div>
+            <div class="progress"><span id="progressBar"></span></div>
+          </form>
+        </div>
+      </section>
+
+      <section class="how container">
+        <h2>How It Works</h2>
+        <div class="grid-3">
+          <article><h3>1. Upload</h3><p>Upload your web app ZIP and optional assets.</p></article>
+          <article><h3>2. Configure</h3><p>Select plugins, app name, and target platforms.</p></article>
+          <article><h3>3. Download</h3><p>Receive secure APK/IPA links when builds complete.</p></article>
+        </div>
+      </section>
+
+      <section id="features" class="features container">
+        <h2>Features</h2>
+        <ul>
+          <li>Android APK and iOS IPA build automation</li>
+          <li>Optional plugin support (camera, push, analytics)</li>
+          <li>Secure upload validation and isolated build directories</li>
+        </ul>
+      </section>
+
+      <section id="pricing" class="container simple-section">
+        <h2>Pricing</h2>
+        <p>MVP preview: free local self-hosted usage.</p>
+      </section>
+
+      <section id="contact" class="container simple-section">
+        <h2>Contact</h2>
+        <p>Email: support@web2mobile.local</p>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-wrap">
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

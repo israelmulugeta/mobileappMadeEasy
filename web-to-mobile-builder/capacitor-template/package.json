@@ -1,0 +1,15 @@
+{
+  "name": "web-to-mobile-capacitor-template",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "sync:android": "npx cap sync android",
+    "sync:ios": "npx cap sync ios"
+  },
+  "dependencies": {
+    "@capacitor/android": "^6.1.2",
+    "@capacitor/cli": "^6.1.2",
+    "@capacitor/core": "^6.1.2",
+    "@capacitor/ios": "^6.1.2"
+  }
+}
